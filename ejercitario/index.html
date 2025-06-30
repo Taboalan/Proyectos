@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Juego de Arrastrar Imágenes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Arrastra cada imagen a su lugar correcto</h2>
+
+  <div class="game">
+    <div id="contenedor-imagenes" class="images">
+      <img src="C:\Users\user\Documents\analisis_2do\LP_2\ejercitario\images/gato.jpg" id="gato" draggable="true" class="draggable" alt="Gato">
+      <img src="C:\Users\user\Documents\analisis_2do\LP_2\ejercitario\images/perro.jpg" id="perro" draggable="true" class="draggable" alt="Perro">
+      <img src="C:\Users\user\Documents\analisis_2do\LP_2\ejercitario\images/pajaro.jpg" id="pajaro" draggable="true" class="draggable" alt="Pájaro">
+    </div>
+
+    <div class="targets">
+      <div class="dropzone" data-animal="gato">
+        <span class="nombre-animal">🐱 Gato </span></div>
+      <div class="dropzone" data-animal="perro">
+        <span class="nombre-animal">🐶 Perro</span></div>
+      <div class="dropzone" data-animal="pajaro">
+        <span class="nombre-animal">🐦 Pájaro</span></div>
+    </div>
+  </div>
+
+  <p id="mensaje"></p>
+  <button id="reiniciar">Jugar de nuevo</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

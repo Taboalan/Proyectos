@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.images, .targets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+img.draggable {
+  width: 120px;
+  cursor: grab;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.dropzone {
+  width: 140px;
+  height: 120px;
+  border: 2px dashed #aaa;
+  line-height: 120px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.dropzone.hovered {
+  background-color: #cceeff;
+}
+
+.correct {
+  background-color: #c8e6c9 !important;
+}
+
+.incorrect {
+  background-color: #ffcdd2 !important;
+}
+
+#mensaje {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#reiniciar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dropzone .nombre-animal{
+  pointer-events: none;
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h2>Tablero de tareas</h2>
+    <div class="input-area">
+        <input type="text" id="new-task" placeholder="NUeva tarea..."/>
+        <button onclick="addTask()">Agregar tarea</button>
+        <button onclick="resetBoard()">Resetear Tablero</button>
+     </div>
+
+     <div class="board">
+        <div class="dropzone" id="todo">
+            <h3>Por Hacer</h3>
+        </div>
+        <div class="dropzone" id="in-progress">
+            <h3>En progreso</h3>
+        </div>
+         <div class="dropzone" id="done">
+            <h3>Hecho</h3>
+        </div>
+
+     </div>
+     <script src="script.js"></script>
+     </body>
+     </html>
